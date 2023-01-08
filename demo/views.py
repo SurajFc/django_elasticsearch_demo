@@ -38,12 +38,12 @@ class SearchMovieElasticView(generics.ListAPIView):
                                 "fuzziness": "2",
                             }
                         },
-
                     }
                 }
             }
 
         res = es.search(index="movie", body=q)
+        print("res", res)
         final = []
         for hit in res['hits']['hits']:
             final.append(hit['_source'])

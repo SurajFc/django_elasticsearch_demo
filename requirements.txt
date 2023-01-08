@@ -3,3 +3,5 @@ django_elasticsearch_dsl==7.2.2
 djangorestframework==3.14.0
 elasticsearch==7.17.7
 Faker==15.3.2
+django-cors-headers
+django-filter
